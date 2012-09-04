@@ -311,7 +311,7 @@ sys_mmap(struct tcb *tcp)
 #endif /* !HAVE_LONG_LONG_OFF_T */
 
 #if _LFS64_LARGEFILE || HAVE_LONG_LONG_OFF_T
-# if defined(X32)
+//# if defined(X32)
 int sys_old_mmap(struct tcb *tcp)
 {
 	long u_arg[6];
@@ -343,7 +343,7 @@ int sys_old_mmap(struct tcb *tcp)
 	}
 	return RVAL_HEX;
 }
-# endif
+//# endif
 
 /* TODO: comment which arches use this routine.
  * For one, does ALPHA on Linux use this??
