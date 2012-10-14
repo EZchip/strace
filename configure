@@ -3013,7 +3013,7 @@ fi
 
 # Define the identity of the package.
  PACKAGE='strace'
- VERSION='4.7'
+ VERSION='4.7.EZchip_1.0'
 
 
 cat >>confdefs.h <<_ACEOF
